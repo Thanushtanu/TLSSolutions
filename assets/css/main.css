@@ -1935,3 +1935,68 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# team card
+--------------------------------------------------------------*/
+.team-card-large {
+  max-width: 90%; /* Ensures it fits well on smaller screens */
+  height: auto;
+  padding: 20px;
+  margin: 15px;
+}
+
+.team-card-large .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-card-large img {
+  width: 120px;
+  height: 120px;
+}
+
+.team-card-large .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.team-card-large .card-text {
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px 0;
+  word-wrap: break-word; /* Break long words */
+  white-space: normal; /* Ensure text wraps to the next line */
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+@media (max-width: 700px) {
+  .team-card-large {
+    padding: 10px;
+  }
+
+  .team-card-large img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-card-large .card-title {
+    font-size: 1.2rem;
+  }
+
+  .team-card-large .card-text {
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap:wrap ;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
